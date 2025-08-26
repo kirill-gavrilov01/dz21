@@ -20,7 +20,7 @@ public class Main {
 
         // Выводим все подходящие результаты
         System.out.println("Книги, содержащие " + "Гарри ");
-        for(Searchable book : results) {
+        for (Searchable book : results) {
             System.out.println(book.getTitle());
         }
     }
