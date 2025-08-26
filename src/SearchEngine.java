@@ -8,8 +8,8 @@ class SearchEngine {
     // Метод поиска всех соответствий (возвращает весь список подходящих результатов)
     public List<Searchable> findAllMatches(List<? extends Searchable> items, String query) {
         results.clear(); // очищаем предыдущий результат
-        for(Searchable item : items) {
-            if(item.contains(query)) {
+        for (Searchable item : items) {
+            if (item.contains(query)) {
                 results.add(item); // добавляем все подходящие элементы
             }
         }

@@ -21,7 +21,7 @@ abstract class productBasket {
         Iterator<Product> iterator = products.iterator();
         while (iterator.hasNext()) {
             Product currentProduct = iterator.next();
-            if(currentProduct.getName().equals(name)) {
+            if (currentProduct.getName().equals(name)) {
                 removedProducts.add(currentProduct); // собираем удалённые продукты
                 iterator.remove();                   // удаляем из корзины
             }
